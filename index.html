@@ -12,23 +12,92 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    html{
+      height: 100%;
+      width: 375px;
+      max-width: 375px;
+      background-color: hsl(0, 0%, 8%);
+    }
+
+    body{
+      display: flex; 
+      height: auto;
+      width: 325px;
+      margin-top: 100px;
+      background-color: hsl(0, 0%, 12%);
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    img{
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+    }
+
+    p:first-of-type{
+      margin-bottom: 0px;
+    }
+    p{
+      color: white;
+      width: 280px;
+      border-radius: 10px;
+      height: 30px;
+    }
+
+    .hero{
+      margin-bottom: -8px;
+    }
+    .middle{
+      margin-top: -8px;
+    }
+    .main p{
+      padding-top: 10px;
+      background-color: hsl(0, 0%, 20%);
+      transition: background-color .5s;
+    }
+    .main p:hover{
+      background-color: hsl(75, 94%, 57%);
+    }
+
+    .clr{
+      color: hsl(75, 94%, 57%);
+      margin-top: 0px;
+    }
+    .img{
+      margin-top: 35px;
+    }
   </style>
 </head>
 <body>
+  <div class="img"><img src='Untitled.png'></div>
+  <div class="hero">
+    <p>Jessica Randall</p>
+    <p class="clr">London, United Kingdom</p>
+  </div>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+  <div class="middle">
+    <p>"Front-end developer and avid reader."</p>
+  </div>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
+  <div class="main">
+    <p>GitHub</p>
+    <p>Frontend Mentor</p>
+    <p>LinkedIn</p>
+    <p>Twitter</p>
+    <p>Instagram</p>
+  </div>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Joao Almeida</a>.
   </div>
 </body>
 </html>
